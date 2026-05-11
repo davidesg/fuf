@@ -29,7 +29,7 @@ FUE. Lee el fichero de predicción generado por `fue -f`, propaga la estructura
 ARMA y produce:
 
 - Un fichero de texto con las predicciones puntuales e intervalos de predicción.
-- Un informe LaTeX/PostScript/PDF con el gráfico de predicción.
+- Un informe LaTeX/PDF con el gráfico de predicción.
 - Un gráfico diagnóstico de los residuos del modelo.
 
 FUF forma parte del conjunto de herramientas de series temporales univariantes:
@@ -42,13 +42,13 @@ FUF forma parte del conjunto de herramientas de series temporales univariantes:
 - Compilador C: GCC ≥ 9 (Linux/macOS) o MinGW-w64 (Windows)
 - [GNU Scientific Library (GSL)](https://www.gnu.org/software/gsl/) ≥ 2.0
 - [Gnuplot](http://www.gnuplot.info/) ≥ 5.0 (gráfico de residuos)
-- Distribución LaTeX con `dvips` y `ps2pdf` (informe PDF de predicción)
+- Distribución LaTeX con `pdflatex` (informe PDF de predicción)
 - GNU Make
 
 En Debian/Ubuntu:
 
 ```
-sudo apt install build-essential libgsl-dev gnuplot texlive-latex-base ghostscript
+sudo apt install build-essential libgsl-dev gnuplot texlive-latex-base
 ```
 
 En macOS (Homebrew):
