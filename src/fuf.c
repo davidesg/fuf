@@ -45,7 +45,7 @@ FILE *prevputv;
 
 
 
-void main( int argc, char *argv[] )
+int main( int argc, char *argv[] )
 
 {
    const  double PI = 3.141592654;
@@ -1485,7 +1485,7 @@ forecast( varma1.m, Ts.nobs, Tm.ornsop, (Tm.ornsop+varma1.p ), varma1.q, varma1.
    FREE_STR( namef );
    FREE_STR( Tm.residuals );
 /* printf( "\nFINAL RAM  : %lu\n", coreleft() );                             */
-
+return 0;
 }
 
 /*****************************************************************************/
@@ -1738,7 +1738,7 @@ for (i = 1; i <= Ts.nobs + Fs.L; i++) {
 if (Tm.NdetVar > 0) {
     // Deterministic variables present - calculate their effects
     NuLag = ivector( 1, Tm.NdetVar );
-    Nu    = (real **)malloc((size_t)Tm.NdetVar * sizeof(real *)) - 1;
+    Nu    = (real **)calloc((size_t)(Tm.NdetVar + 1), sizeof(real *));
 
     // Initialize Nu arrays for each deterministic variable
     for (j = 1; j <= Tm.NdetVar; j++) {
