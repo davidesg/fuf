@@ -95,6 +95,7 @@ distclean: clean
 
 # Install
 install: $(TARGET)
+	rm -f /usr/local/bin/fuf$(EXE_EXT)
 	cp $(TARGET) /usr/local/bin/
 
 uninstall:
