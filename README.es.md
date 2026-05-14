@@ -2,7 +2,7 @@
 
 **Free Univariate Forecasting** — predicción probabilística para modelos SARIMA univariantes.
 
-Copyright (C) 2026 A.B. Treadway & D.E. Guerrero  
+Copyright (C) 1995-1996 J.A. Mauricio; 2009-2026 A.B. Treadway & D.E. Guerrero  
 Licencia: GNU General Public License v2 o posterior.
 
 ---
