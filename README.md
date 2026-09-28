@@ -1,5 +1,7 @@
 # FUF 1.08.2
 
+> **Archived (2026-09-28).** Development of this code continues in the ATSW monorepo (`davidesg/atsw-gui`, private), under `engines/fuf`, together with the other C engines and the shared `lib/` they build against.
+
 **Free Univariate Forecasting** — probabilistic forecasting for univariate SARIMA models.
 
 Copyright (C) 1995-1996 J.A. Mauricio; 2009-2026 A.B. Treadway & D.E. Guerrero  
